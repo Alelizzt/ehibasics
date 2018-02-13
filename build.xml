@@ -27,7 +27,7 @@
   <target depends="init" name="compile">
     <!-- Compile the java code from ${src} into ${build}/classes -->
     <mkdir dir="${build}/classes"/>
-    <javac destdir="${build}/classes" includes="**/*.java" excludes="**/bak~/*.java"  source="1.6" target="1.6">
+    <javac destdir="${build}/classes" includes="**/*.java" excludes="**/bak~/*.java" includeantruntime="true" encoding="UTF-8" source="1.6" target="1.6">
       <!-- <classpath>
         <pathelement location="lib/jh.jar"/>
       </classpath>
